@@ -1,0 +1,23 @@
+name: crud_usuarios_agtech
+description: Projeto Flutter CRUD de usuários com Hive para vaga AGTech.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  path_provider: ^2.0.11
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  hive_generator: ^2.0.0
+  build_runner: ^2.3.3
+
+flutter:
+  uses-material-design: true

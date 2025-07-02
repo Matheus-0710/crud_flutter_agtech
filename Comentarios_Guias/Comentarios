@@ -1,0 +1,47 @@
+Comentarios de Guia para o App
+
+ `main.dart`
+
+Função: Inicia o app.
+
+  * Inicializa o Hive.
+  * Registra o modelo `Usuario`.
+  * Abre a caixa de dados (`usuarios`).
+  * Mostra a tela inicial (`HomePage`).
+
+
+
+ `modelo/usuario.dart`
+
+Função: Define o modelo de dados.
+
+  * Cria a classe `Usuario` com `nome` e `idade`.
+  * Usa `@HiveType` e `@HiveField` para salvar no banco Hive.
+  * Precisa gerar o arquivo `usuario.g.dart`.
+
+
+
+ `paginas/home_page.dart`
+
+Função: Tela principal do app.
+
+  * Exibe lista de usuários.
+  * Permite adicionar, editar e deletar usuários.
+  * Usa TextFields, botões e `ValueListenableBuilder` com Hive.
+
+
+
+ `usuario.g.dart` *(gerado automaticamente)*
+
+Função:** Código que o Hive usa internamente para salvar e ler o modelo `Usuario`.
+
+
+
+ `analysis_options.yaml`
+
+Função: Define regras de boas práticas no projeto (lint).
+
+  * Ativa regras recomendadas do Flutter.
+  * Pode personalizar avisos e sugestões do VS Code.
+
+** Hive como banco local e Flutter para interface simples e eficiente **
